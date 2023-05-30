@@ -1,0 +1,31 @@
+Activation functions are an essential component of deep learning models. 
+They introduce non-linearity to the model, allowing it to learn complex patterns and make predictions
+on a wide range of data. Activation functions are typically applied to the output of each neuron in a neural network layer.
+
+Here are some commonly used activation functions in deep learning:
+
+1. **Sigmoid**: The sigmoid function takes a real-valued number as input and maps it to a value between 0 and 1. 
+It is given by the formula `f(x) = 1 / (1 + exp(-x))`. Sigmoid functions are useful in binary classification problems.
+
+2. **ReLU (Rectified Linear Unit)**: The ReLU function is defined as `f(x) = max(0, x)`.
+It outputs the input value if it is positive, and zero otherwise. ReLU is widely used in 
+deep learning due to its simplicity and effectiveness in handling the vanishing gradient problem.
+
+3. **Leaky ReLU**: The leaky ReLU function is a modified version of ReLU that introduces a small
+slope for negative input values. It is defined as `f(x) = max(alpha * x, x)`, where `alpha` is 
+a small positive constant. Leaky ReLU helps address the "dying ReLU" problem by preventing neurons from becoming completely inactive.
+
+4. **Tanh**: The hyperbolic tangent function (tanh) is similar to the sigmoid function, 
+but it maps the input to a value between -1 and 1. It is given by the formula 
+`f(x) = (exp(x) - exp(-x)) / (exp(x) + exp(-x))`.
+Tanh is useful in scenarios where negative values need to be preserved.
+
+5. **Softmax**: The softmax function is commonly used in the output layer of a multi-class classification problem.
+It takes a vector of real numbers as input and outputs a probability distribution over different classes.
+Softmax is given by the formula 
+`f(x_i) = exp(x_i) / sum(exp(x_j))`, 
+where `x_i`  represents the input values and `exp()` is the exponential function.
+
+These are just a few examples of activation functions commonly used in deep learning. 
+The choice of activation function depends on the nature of the problem, network architecture,
+and the desired properties of the model.
