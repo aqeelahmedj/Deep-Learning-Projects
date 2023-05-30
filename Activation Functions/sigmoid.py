@@ -15,3 +15,8 @@ plt.ylabel('sigmoid(x)')
 plt.title('Sigmoid Activation Function')
 plt.grid(True)
 plt.show()
+
+
+
+
+
